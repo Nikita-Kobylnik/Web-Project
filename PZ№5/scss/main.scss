@@ -392,11 +392,6 @@
     resize: none;
   }
 
-  .footer-input:focus,
-  .footer-txtarea:focus {
-    outline-color: $mainColor;
-  }
-
   .footer-input {
     height: 35px;
   }
@@ -431,6 +426,46 @@
   span {
     color: #f0f0f077;
   }
+}
+
+//Валидация Мыла
+
+.footer__email.success input {
+  border-color: #2ecc71;
+  border-width: 3px;
+}
+
+.footer__email.success i.fa-check-circle {
+  visibility: visible;
+  color: #2ecc71;
+}
+
+.footer__email.error input {
+  border-color: #e74c3c;
+}
+
+.footer__email.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: #e74c3c;
+}
+
+.footer__email i {
+  position: absolute;
+  top: 33px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.footer__email small {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footer__email.error small {
+  visibility: visible;
+  color: #e74c3c;
 }
 
 /*Popup
@@ -523,5 +558,8 @@
       color: #fff;
       background-color: black;
     }
+  }
+  & input {
+    border-width: 2px;
   }
 }
