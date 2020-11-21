@@ -35,10 +35,10 @@
                 </form>
 
                 <div class="menu-list">
-                    <a href="#" class="menu-list__item">Товары</a>
-                    <a href="#" class="menu-list__item">доставка</a>
-                    <a href="#" class="menu-list__item">Скидки</a>
-                    <a href="#" class="menu-list__item">Контакты</a>
+                    <a href="#tov" class="menu-list__item">Товары</a>
+                    <a href="#del" class="menu-list__item">доставка</a>
+                    <a href="#disc" class="menu-list__item">Скидки</a>
+                    <a href="#cont" class="menu-list__item">Контакты</a>
                     <a href="#"><img src="img/basket.svg" alt="" class="basket"></a>
                 </div>
             </nav>
@@ -68,7 +68,7 @@
 
     <section class="product">
         <div class="container">
-            <h1 class="product__title">
+            <h1 class="product__title" id="tov">
                 Диски
             </h1>
             <div class="product__items">
@@ -358,7 +358,7 @@
 
     <section class="delivery">
         <div class="container">
-            <h1 class="delivery__title-all">
+            <h1 class="delivery__title-all" id="del">
                 Доставка и оплата
             </h1>
             <div class="delivery-all">
@@ -394,7 +394,7 @@
 
     <section class="discount">
         <div class="container">
-            <h2 class="discount__title">Система скидок</h2>
+            <h2 class="discount__title" id="disc">Система скидок</h2>
             <div class="discount__table _anim-items _anim_no-hide">
                 <table>
                     <tr>
@@ -455,7 +455,7 @@
             </div>
 
             <div class="footer__center box">
-                <h2>Адресса</h2>
+                <h2>Адрес</h2>
                 <div class="footer-content">
                     <div class="footer__place">
                         <span class="fas fa-map-marker-alt"></span>
@@ -473,20 +473,26 @@
             </div>
 
             <div class="footer__right box">
-                <h2>Связаться с нами</h2>
+                <h2 id="cont">Связаться с нами</h2>
                 <div class="footer-content">
-                    <form action="#">
+                    <form action="#" id="form">
+
                         <div class="footer__email">
                             <div class="footer__email-text">Email *</div>
-                            <input type="email" required class="footer-input">
+                            <input type="email" class="footer-input" id="email">
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
                         </div>
+
                         <div class="footer-email-msg">
                             <div class="footer__email-text">Сообщение *</div>
                             <textarea cols="25" rows="2" required class="footer-txtarea"></textarea>
                         </div>
+
                         <div class="footer__button">
-                            <button type="submit  ">Отправить</button>
+                            <button>Отправить</button>
                         </div>
+
                     </form>
                 </div>
             </div>
@@ -501,23 +507,25 @@
     <div class="popup" id="popup">
         <div class="popup__body">
             <div class="popup__content">
-                <a href="##" class="popup__close">X</a>
+                <a href="##" class="popup__close"><i class="fas fa-times"></i></a>
+
                 <h2>Заказ запчасти</h2>
-                <form action="#" class="popup__form" method="GET">
+                <form action="#" class="popup__form" method="GET" id="formPopup">
                     <div class="popup__form-container">
 
-                        <input type="number" min="1980" max="2021" placeholder="Год выпуска" required>
-                        <input type="text" placeholder="Марка авто" required>
-                        <input type="text" placeholder="VIN код" required>
+                        <input type="number" min="1980" max="2021" placeholder="Год выпуска" id="year">
+                        <input type="text" placeholder="Марка авто" id="brand">
+                        <input type="text" placeholder="VIN код" id="VIN">
                         <input type="tel" id="tel" placeholder="Телефон">
-                        <input type="text" placeholder="Название запчасти" required>
+                        <input type="text" placeholder="Название запчасти" id="namePart">
 
-                        <button type="submit">Заказать запчасть</button>
+                        <button>Заказать запчасть</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+
     <script src="js/inputmask.min.js"></script>
     <script src="js/main.js"></script>
 
