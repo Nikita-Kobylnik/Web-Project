@@ -1,0 +1,263 @@
+/* Обнуление  
+========================*/
+* {
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+/*Container
+========================*/
+
+.container {
+  width: 1250px;
+  margin: 0 auto;
+  padding: 0px 40px;
+}
+/*======================*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*Header
+========================*/
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__text {
+  font-size: 35px;
+  text-transform: uppercase;
+  color: black;
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 5px;
+}
+
+.logo__img {
+  width: 40px;
+  height: 40px;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+}
+
+/*Строка поиска
+========================*/
+.search-form {
+  position: relative;
+  width: 230px;
+  height: 40px;
+}
+
+.search-btn {
+  position: absolute;
+  background: #ffffff;
+  border: none;
+  height: 42px;
+  width: 42px;
+
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  border-bottom: 2px solid #000000;
+}
+
+.search-btn:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #000000;
+}
+
+.search-place {
+  height: 42px;
+  width: 0;
+  padding: 0 42px 0 15px;
+  border: none;
+
+  outline: none;
+  background: transparent;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 260px;
+
+  border-bottom: 2px solid #000000;
+}
+
+/*About
+========================*/
+
+/*About-button
+========================*/
+.about__product a {
+  outline: none;
+  display: inline-block;
+  width: 180px;
+  height: 65px;
+  line-height: 65px;
+  border-radius: 45px;
+  margin: 30px 0 30px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px #0000001a;
+  transition: 0.3s;
+}
+
+.about__product a:hover {
+  background: #2eabe5;
+  box-shadow: 0 15px 20px #2ea2e566;
+  color: white;
+  transform: translateY(-7px);
+}
+
+/*Product
+========================*/
+
+/*Footer
+========================*/
+
+/*Delivery
+========================*/
+.delivery {
+  margin: 20px 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.delivery__title-all {
+  font-family: "Montserrat", sans-serif;
+  font-size: 37px;
+  font-weight: 400;
+  text-align: center;
+  margin: 20px 0 50px 0;
+  text-transform: uppercase;
+  color: #474747;
+}
+
+.delivery-all {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delivery__item {
+  text-align: center;
+  padding: 0 19px;
+}
+
+.delivery__item:first-child {
+  transform: translate(-100%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.delivery__item:first-child._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0.4s;
+}
+
+.delivery__item:nth-child(2) {
+  transform: translate(0px, 100%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.delivery__item:nth-child(2)._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0s;
+}
+
+.delivery__item:last-child {
+  transform: translate(45%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.delivery__item:last-child._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0.4s;
+}
+
+.delivery__title {
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.delivery__icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+.delivery__text {
+  font-size: 16px;
+  color: #000000be;
+  line-height: 1.5;
+}
+
+/*Discount
+========================*/
+
+.discount__table {
+  display: flex;
+  justify-content: center;
+
+  transform: translate(0px, 30%);
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.discount__table._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.5s ease 0.4s;
+}
+
+.discount .discount__table table {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  border-collapse: collapse;
+  text-align: center;
+  /* margin: 15px 0px 20px 0px; */
+}
+
+.discount .discount__table table th,
+td:first-child {
+  background: #2eabe5ca;
+  color: #000000;
+
+  padding: 10px 20px;
+}
+
+.discount .discount__table table th,
+td {
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  border-color: white;
+}
+
+.discount .discount__table table th {
+  font-weight: 600;
+}
+
+.discount .discount__table table td:nth-child(n + 2) {
+  background: #d8e6f3;
+}
