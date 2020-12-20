@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>AutoShop</title>
+
+    <!-- <link rel="stylesheet" href="css/style1.css"> -->
+
+    <!-- <link rel="preload" href="css/style1.css" as="style">
+    <link rel="stylesheet" href="css/style1.css" media="print" onload="this.media='all'"> -->
+
+    <script src="loadCSS.JS"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <script defer src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script id="loadcss">
+        loadCSS("css/shrinker.css", document.getElementById("loadcss"));
+    </script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <a href="#"><img src="img/logo.svg" alt="" class="logo__img lazy"></a>
+                    <a href="#" class="logo__text">
+                        AutoParts
+                    </a>
+
+                </div>
+
+                <form action="" class="search-form">
+                    <input type="search" placeholder="Поиск на сайте" class="search-place">
+                    <button class="search-btn"></button>
+                </form>
+
+                <div class="menu-list">
+                    <a href="#tov" class="menu-list__item">Товары</a>
+                    <a href="#del" class="menu-list__item">доставка</a>
+                    <a href="#disc" class="menu-list__item">Скидки</a>
+                    <a href="#cont" class="menu-list__item">Контакты</a>
+                    <a href="#"><img src="img/basket.svg" alt="" class="basket lazy"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <div class="about-all">
+                <div class="about__product">
+                    <h1 class="about__title _anim-items _anim_no-hide">Запчасти для любых автомобилей</h1>
+                    <p class="about__text _anim-items _anim_no-hide">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing gfdsrtb fsfgtyri fdh<br> elit.
+                        Aliquam, fugiat
+                    </p>
+                    <a href="#popup">Заказать</a>
+                </div>
+                <!-- <div class="about__img _anim-items">
+                    <img src="img/slide03.jpg" alt="">
+                </div> -->
+
+
+                <img src="img/slide03.jpg" alt="About" class="about__img _anim-items _anim_no-hide lazy">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="product">
+        <div class="container">
+            <h1 class="product__title title" id="tov">
+                Диски
+            </h1>
+            <div class="product__items">
+
+                <div class="product-wrap _anim-items _anim_no-hide">
+                    <div class="product__item">
+
+                        <img srcset="img/product1.2.jpg 512w,
+                        img/product1.2-small.jpg 140w" alt="Продукт" class="product__img lazy">
+
+                        <div class="product-buy">
+                            <a href="#" class="product-buy__button">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <a href="#">Диск PDW Tour Black Machine Face</a>
+                        <p>
+                            В наличии: 25 шт.<br>
+                            Брэнд: Something<br>
+                        </p>
+                        <span class="product-price">1 999 грн</span>
+                    </div>
+                </div>
+
+                <div class="product-wrap _anim-items _anim_no-hide">
+                    <div class="product__item">
+
+                        <img srcset="img/product1.1.jpg 512w,
+                        img/product1.1-small.jpg 140w" alt="Продукт" class="product__img lazy">
+
+                        <div class="product-buy">
+                            <a href="#" class="product-buy__button">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <a href="">ZW 610 (BP - Черный внутри полированый)</a>
+                        <p>
+                            В наличии: 16 шт.<br>
+                            Брэнд: Something<br>
+                        </p>
+                        <span class="product-price">2 399 грн</span>
+                    </div>
+                </div>
+
+                <div class="product-wrap _anim-items _anim_no-hide">
+                    <div class="product__item">
+                        <!-- <img src="img/product1.10.jpg" alt="Продукт" class="product__img"> -->
+
+                        <img srcset="img/product1.10.jpg 512w,
+                        img/product1.10-small.jpg 140w" alt="Продукт" class="product__img lazy">
+
+                        <div class="product-buy">
+                            <a href="#" class="product-buy__button">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <a href="">Диск PDW Tour ZW 355 RBLPZM R13</a>
+                        <p>
+                            В наличии: 13 шт.<br>
+                            Брэнд: Something<br>
+                        </p>
+                        <span class="product-price">999 грн</span>
+                    </div>
+                </div>
+
+                <div class="product-wrap _anim-items _anim_no-hide">
+                    <div class="product__item">
+                        <!-- <img src="img/product1.2.jpg" alt="Продукт" class="product__img"> -->
+
+                        <img srcset="img/product1.2.jpg 512w,
+                        img/product1.2-small.jpg 140w" alt="Продукт" class="product__img lazy">
+
+                        <div class="product-buy">
+                            <a href="#" class="product-buy__button">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <a href="">Диск PDW STORM SM-3203 GP(R)Z R13</a>
+                        <p>
+                            В наличии: 29 шт.<br>
+                            Брэнд: Somethingаа<br>
+                        </p>
+                        <span class="product-price">1 325 грн</span>
+                    </div>
+                </div>
+
+                <div class="product-wrap _anim-items _anim_no-hide">
+                    <div class="product__item">
+                        <!-- <img src="img/product1.3.jpg" alt="Продукт" class="product__img"> -->
+
+                        <img srcset="img/product1.3.jpg 512w,
+                        img/product1.3-small.jpg 140w" alt="Продукт" class="product__img lazy">
+
+                        <div class="product-buy">
+                            <a href="#" class="product-buy__button">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <a href="#">REPLICA CHEVROLET 3206 BP R14 W6</a>
+                        <p>
+                            В наличии: 65 шт.<br>
+                            Брэнд: Something<br>
+                        </p>
+                        <span class="product-price">5 399 грн</span>
+                    </div>
+                </div>
+
+                <div class="product-wrap _anim-items _anim_no-hide">
+                    <div class="product__item">
+                        <!-- <img src="img/product1.8.jpg" alt="Продукт" class="product__img"> -->
+
+                        <img srcset="img/product1.8.jpg 512w,
+                        img/product1.8-small.jpg 140w" alt="Продукт" class="product__img lazy">
+
+                        <div class="product-buy">
+                            <a href="#" class="product-buy__button">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <a href="#">REPLICA STORM SM-3203 GP(R)Z R13 W5.5</a>
+                        <p>
+                            В наличии: 34 шт.<br>
+                            Брэнд: Something<br>
+                        </p>
+                        <span class="product-price">1 999 грн</span>
+                    </div>
+                </div>
+
+                <div class="product-wrap _anim-items _anim_no-hide">
+                    <div class="product__item">
+                        <!-- <img src="img/product1.3.jpg" alt="Продукт" class="product__img"> -->
+
+                        <img srcset="img/product1.3.jpg 512w,
+                        img/product1.3-small.jpg 140w" alt="Продукт" class="product__img lazy">
+
+                        <div class="product-buy">
+                            <a href="#" class="product-buy__button">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <a href="#">PDW C-Spec Gloss Black Machined Face R18</a>
+                        <p>
+                            В наличии: 17 шт.<br>
+                            Брэнд: Something<br>
+                        </p>
+                        <span class="product-price">1 350 грн</span>
+                    </div>
+                </div>
+
+                <div class="product-wrap _anim-items _anim_no-hide">
+                    <div class="product__item">
+                        <!-- <img src="img/product1.1.jpg" alt="Продукт" class="product__img"> -->
+
+                        <img srcset="img/product1.1.jpg 512w,
+                        img/product1.1-small.jpg 140w" alt="Продукт" class="product__img lazy">
+
+                        <div class="product-buy">
+                            <a href="#" class="product-buy__button">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <a href="#">REPLICA STORM SM ZW 247 (SP) R13 W5.5</a>
+                        <p>
+                            В наличии: 25 шт.<br>
+                            Брэнд: Something<br>
+                        </p>
+                        <span class="product-price">890 грн</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <h1 class="product__title title">
+                Автоакустика
+            </h1>
+
+            <div class="product__items">
+
+                <div class="product-wrap _anim-items _anim_no-hide">
+                    <div class="product__item">
+                        <img src="img/product1.6.jpg" alt="Продукт" class="product__img lazy">
+                        <div class="product-buy">
+                            <a href="#" class="product-buy__button">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <a href="#">Автоакустика Blaupunkt ICx 622</a>
+                        <p>
+                            В наличии: 65 шт.<br>
+                            Тип: Коаксиальная<br>
+                        </p>
+                        <span class="product-price">780 грн</span>
+                    </div>
+                </div>
+
+                <div class="product-wrap _anim-items _anim_no-hide">
+                    <div class="product__item">
+                        <img src="img/product1.5.jpg" alt="Продукт" class="product__img lazy">
+                        <div class="product-buy">
+                            <a href="#" class="product-buy__button">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <a href="#">Автоакустика Blaupunkt Ifdx 321</a>
+                        <p>
+                            В наличии: 11 шт.<br>
+                            Тип: Коаксиальная<br>
+                        </p>
+                        <span class="product-price">2 260 грн</span>
+                    </div>
+                </div>
+
+                <div class="product-wrap _anim-items _anim_no-hide">
+                    <div class="product__item">
+                        <img src="img/product1.6.jpg" alt="Продукт" class="product__img lazy">
+                        <div class="product-buy">
+                            <a href="#" class="product-buy__button">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <a href="#">Автоакустика Calcell CP-6930</a>
+                        <p>
+                            В наличии: 15 шт.<br>
+                            Тип: Коаксиальная<br>
+                        </p>
+                        <span class="product-price">1 345 грн</span>
+                    </div>
+                </div>
+
+                <div class="product-wrap _anim-items _anim_no-hide">
+                    <div class="product__item">
+                        <img src="img/product1.7.jpg" alt="Продукт" class="product__img lazy">
+                        <div class="product-buy">
+                            <a href="#" class="product-buy__button">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <a href="#">Автоакустика JVC CL-DP700</a>
+                        <p>
+                            В наличии: 13 шт.<br>
+                            Тип: Коаксиальная<br>
+                        </p>
+                        <span class="product-price">3 900 грн</span>
+                    </div>
+                </div>
+
+                <div class="product-wrap _anim-items _anim_no-hide">
+                    <div class="product__item">
+                        <img src="img/product1.9.jpg" alt="Продукт" class="product__img lazy">
+                        <div class="product-buy">
+                            <a href="#" class="product-buy__button">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <a href="#">Автоакустика JVC CS-DR4392</a>
+                        <p>
+                            В наличии: 13 шт.<br>
+                            Тип: Коаксиальная<br>
+                        </p>
+                        <span class="product-price">1 625 грн</span>
+                    </div>
+                </div>
+
+                <div class="product-wrap _anim-items _anim_no-hide">
+                    <div class="product__item">
+                        <img src="img/product1.6.jpg" alt="Продукт" class="product__img lazy">
+                        <div class="product-buy">
+                            <a href="#" class="product-buy__button">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <a href="#">Автоакустика JVC CS-DR4222</a>
+                        <p>
+                            В наличии: 13 шт.<br>
+                            Тип: Коаксиальная<br>
+                        </p>
+                        <span class="product-price">4 650 грн</span>
+                    </div>
+                </div>
+
+                <div class="product-wrap _anim-items _anim_no-hide">
+                    <div class="product__item">
+                        <img src="img/product1.7.jpg" alt="Продукт" class="product__img lazy">
+                        <div class="product-buy">
+                            <a href="#" class="product-buy__button">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <a href="#">Автоакустика JVC CS-DR4392</a>
+                        <p>
+                            В наличии: 13 шт.<br>
+                            Тип: Коаксиальная<br>
+                        </p>
+                        <span class="product-price">950 грн</span>
+                    </div>
+                </div>
+
+                <div class="product-wrap _anim-items _anim_no-hide">
+                    <div class="product__item">
+                        <img src="img/product1.9.jpg" alt="Продукт" class="product__img lazy">
+                        <div class="product-buy">
+                            <a href="#" class="product-buy__button">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <a href="#">Автоакустика JVC CS-DR4392</a>
+                        <p>
+                            В наличии: 13 шт.<br>
+                            Тип: Коаксиальная<br>
+                        </p>
+                        <span class="product-price">950 грн</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="delivery">
+        <div class="container">
+            <h1 class="delivery__title-all title" id="del">
+                Доставка и оплата
+            </h1>
+            <div class="delivery-all">
+                <div class="delivery__item _anim-items _anim_no-hide">
+                    <img src="img/delivery-man.svg" alt="" class="delivery__icon lazy">
+                    <h3 class="delivery__title">Доставка</h3>
+                    <div class="delivery__text">
+                        Доставим товар в течении 7 дней.
+                        При весе детали более 10 кг, нужно
+                        будет согласовать все пошлины
+                        и условия, а также время доставки</div>
+                </div>
+                <div class="delivery__item _anim-items _anim_no-hide">
+                    <img src="img/dollar.svg" alt="" class="delivery__icon lazy">
+                    <h3 class="delivery__title">Оплата</h3>
+                    <div class="delivery__text">
+                        100% предоплата. Гарантия
+                        возврата денег в срок до 30 дней.
+                        Оплатить можно безналичным
+                        и наличным расчетом, также
+                        на расчетный счет предприятия</div>
+                </div>
+                <div class="delivery__item _anim-items _anim_no-hide">
+                    <img src="img/save-money.svg" alt="" class="delivery__icon lazy">
+                    <h3 class="delivery__title">Возврат платежей</h3>
+                    <div class="delivery__text">
+                        В случае наступления гарантийного случая без проблем возратим ваши средства. Для возрата нужно
+                        оформить заявку через менджера</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="discount">
+        <div class="container">
+            <h2 class="discount__title title" id="disc">Система скидок</h2>
+            <div class="discount__table _anim-items _anim_no-hide">
+                <table>
+                    <tr>
+                        <th rowspan="2">Сумма заказа</th>
+                        <th colspan="2">Скидки</th>
+                    </tr>
+                    <tr>
+                        <th>Бампера и автоакустика</th>
+                        <th>Глушители и тормозные диски</th>
+                    </tr>
+                    <tr>
+                        <td>До 799 грн</td>
+                        <td>5%</td>
+                        <td>5%</td>
+                    </tr>
+                    <tr>
+                        <td>От 800 грн</td>
+                        <td>8%</td>
+                        <td>9%</td>
+                    </tr>
+                    <tr>
+                        <td>От 1500 грн</td>
+                        <td>15%</td>
+                        <td>13%</td>
+                    </tr>
+                    <tr>
+                        <td>От 3000 грн</td>
+                        <td>20%</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td>От 5500 грн и более</td>
+                        <td>30%</td>
+                        <td>25%</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="jquery">
+        <div class="container">
+
+            <h2 class="jquery-title-1 title">Скрытие изображения</h2>
+            <div class="img-content">
+                <img src="img/parts.jpg" alt="Parts" id="parts">
+                <button id="btn">Скрыть изображение</button>
+            </div>
+
+            <h2 class="jquery-title-2 title">Аккардион</h2>
+
+            <div class="accordion limit">
+
+                <div class="accordion__item">
+                    <div class="accordion__title">Первый заголовок</div>
+                    <div class="accordion__text"> Родного, буквенных от всех букв сих, страна себя ручеек вершину
+                        послушавшись
+                        повстречался деревни коварный все переписали рекламных она снова о! Инициал одна предупреждал
+                        пояс себя там ее его, свое деревни запятой рукопись сбить пор родного от всех имени снова,
+                        города, заглавных собрал толку лучше буквенных это бросил языкового семантика. Он правилами ее
+                        великий, подпоясал страну переписали, парадигматическая свое ручеек переулка рыбного родного.
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <div class="accordion__title">Второй заголовок</div>
+                    <div class="accordion__text">Далеко-далеко за словесными горами в стране гласных и согласных живут
+                        рыбные тексты. Но оксмокс буквенных пор текстов переписали, букв необходимыми мир, продолжил
+                        текстами лучше большой выйти точках меня свой наш сих прямо.
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <div class="accordion__title">Третий заголовок</div>
+                    <div class="accordion__text">Далеко-далеко за словесными горами в стране гласных и согласных живут,
+                        рыбные тексты. Вопрос океана одна ее наш выйти рукопись раз! Необходимыми букв, осталось пор
+                        единственное свою пустился по всей безорфографичный скатился парадигматическая дорогу рукопись
+                        за коварных приставка но он она. Ее точках пор агентство, прямо маленькая своих над его
+                        подзаголовок, всемогущая о знаках.
+                    </div>
+                </div>
+
+            </div>
+
+
+            <h2 class="jquery-title-3 title">Табы</h2>
+
+            <div class="tabs">
+
+                <div class="tabs-titles">
+                    <a href="#tab-1" class="tabs__title">Первый таб</a>
+
+                    <a href="#tab-2" class="tabs__title">Второй таб</a>
+
+                    <a href="#tab-3" class="tabs__title">Третий таб</a>
+                </div>
+
+                <div class="tabs-content">
+                    <div class="tabs-item" id="tab-1">
+                        <p>
+                            Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты.
+                            Последний,
+                            языкового взгляд имени встретил наш моей агентство даль его предложения, единственное мир
+                            парадигматическая свою дороге. Большого океана деревни переписывается собрал маленькая
+                            переписали
+                            первую взобравшись!
+                        </p>
+
+                    </div>
+
+                    <div class="tabs-item" id="tab-2">
+                        <p>
+                            Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты. Вдали
+                            заголовок он продолжил, над вскоре агентство маленький языком страна, встретил наш моей
+                            агентство даль его предложения, единственное мир
+                            парадигматическая с диких эта если толку, свой
+                            речью осталось снова своих правилами меня заглавных рукописи текста рыбного маленькая!
+                            Текста он
+                            пунктуация толку?
+                        </p>
+
+                    </div>
+
+                    <div class="tabs-item" id="tab-3">
+                        <p>Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. То она
+                            имеет по всей всеми!</p>
+                        <p>Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Lorem
+                            вскоре до продолжил, всеми даже образ все моей семь, свое залетают последний переписывается
+                            текст великий вдали ведущими домах. Знаках.
+                            Текста моей вопроса эта, первую пор вскоре великий использовало, если от всех которое
+                            безорфографичный грустный, знаках всеми о запятых имеет взгляд возвращайся ты над
+                            подзаголовок?
+                            Раз своих рукопись несколько эта приставка?
+                            Путь, рекламных власти за журчит взобравшись продолжил lorem залетают последний большого
+                            себя
+                            одна не точках семантика если бросил переписывается. Правилами маленькая страна маленький
+                            они.
+                            Путь, пор назад! Языком, ведущими залетают.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <h2 class="jquery-title-4 title">Sortable элементы</h2>
+
+            <div class="sortablje">
+
+                <div id="sort">
+
+                    <div class="sort__item">Первый элемент</div>
+
+                    <div class="sort__item">Второй элемент</div>
+
+                    <div class="sort__item">Третий элемент</div>
+
+                    <div class="sort__item">Четвертый элемент</div>
+
+                    <div class="sort__item">Пятый элемент</div>
+
+                    <div class="sort__item">Шестой элемент</div>
+
+                    <div class="sort__item">Седьмой элемент</div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <h2 class="jquery-title-5 title">Слайдер</h2>
+
+        <div class="slider">
+
+            <div class="prev n"><a href="##"><i class="fas fa-chevron-left"></i></a></div>
+
+            <div class="slider-body">
+                <img src="img/product1.1.jpg" alt="" class="img curry lazy">
+                <img src="img/product1.2.jpg" alt="" class="img lazy">
+                <img src="img/product1.3.jpg" alt="" class="img lazy">
+                <img src="img/product1.10.jpg" alt="" class="img lazy">
+                <img src="img/product1.2.jpg" alt="" class="img lazy">
+            </div>
+
+            <div class="next n"><a href="##"><i class="fas fa-chevron-right"></i></a></div>
+
+        </div>
+
+        <h2 class="jquery-title-6 title">Функционал частей формы</h2>
+
+        <div class="forms">
+            <div class="container">
+                <form action="" class="form">
+                    <input type="range" min="0" max="100" value="0" class="inputRange">
+                    <span class="spanForm">0</span>
+                    <input type="text" class="inputNumber">
+                    <input type="checkbox" class="checkboxForm">
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer__main-content">
+            <div class="footer__left box">
+                <h2>О нас</h2>
+                <div class="footer-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quam nesciunt accusantium error
+                        atque sed nobis tempore consequatur possimus impedit, obcaecati voluptate quas autem? Excepturi
+                        id labore ipsa tenetur eligendi omnis fuga, quisquam veritatis possimus voluptatibus. Doloremque
+                        optio doloribus delectus.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#"><span class="fab fa-facebook-f"></span></a>
+                        <a href="#"><span class="fab fa-twitter"></span></a>
+                        <a href="#"><span class="fab fa-instagram"></span></a>
+                        <a href="#"><span class="fab fa-youtube"></span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__center box">
+                <h2>Адрес</h2>
+                <div class="footer-content">
+                    <div class="footer__place">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span class="footer__center text">Славянск, Украина</span>
+                    </div>
+                    <div class="footer__phone">
+                        <span class="fas fa-phone-alt"></span>
+                        <span class="footer__center text">+380-664233952</span>
+                    </div>
+                    <div class="footer__email">
+                        <span class="fas fa-envelope"></span>
+                        <span class="footer__center text">tmp@example.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__right box">
+                <h2 id="cont">Связаться с нами</h2>
+                <div class="footer-content">
+                    <form action="#" id="form">
+
+                        <div class="footer__email">
+                            <div class="footer__email-text">Email *</div>
+                            <input type="email" class="footer-input" id="email">
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+
+                        <div class="footer-email-msg">
+                            <div class="footer__email-text">Сообщение *</div>
+                            <textarea cols="25" rows="2" required class="footer-txtarea"></textarea>
+                        </div>
+
+                        <div class="footer__button">
+                            <button>Отправить</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <center>
+                <span class="credit">Designed by Nikita Kobylnik | &copy; 2020 All right reserved</span>
+            </center>
+        </div>
+    </footer>
+
+    <div class="popup" id="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="##" class="popup__close"><i class="fas fa-times"></i></a>
+
+                <h2>Заказ запчасти</h2>
+                <form action="#" class="popup__form" method="GET" id="formPopup">
+                    <div class="popup__form-container">
+
+                        <input type="number" min="1980" max="2021" placeholder="Год выпуска" id="year">
+                        <input type="text" placeholder="Марка авто" id="brand">
+                        <input type="text" placeholder="VIN код" id="VIN">
+                        <input type="tel" id="tel" placeholder="Телефон">
+                        <input type="text" placeholder="Название запчасти" id="namePart">
+
+                        <button>Заказать запчасть</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="js/inputmask.min.js"></script>
+    <script defer src="js/main.js"></script>
+    <script src="https: //cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.0/dist/lazyload.min.js"></script>
+    <script>
+        var lazyLoadInstance = new LazyLoad({
+            element_selector: ".lazy"
+        });
+    </script>
+</body>
+
+</html>
